@@ -32,5 +32,5 @@ if uploaded_file:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         
-        response = generator(prompt, max_length=100, num_return_sequences=1)
+        response = generator(prompt, max_new_tokens=100, num_return_sequences=1)
         st.write(response[0]['generated_text'])
