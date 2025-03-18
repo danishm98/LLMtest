@@ -3,7 +3,7 @@ import pandas as pd
 from transformers import pipeline
 
 # Initialize the text generation pipeline
-generator = pipeline('text-generation', model='gpt-3.5-turbo')
+generator = pipeline('text-generation', model='gpt-2')
 
 # Title of the app
 st.title("Ask Questions About Your Excel Data")
